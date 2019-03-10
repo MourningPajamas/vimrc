@@ -34,32 +34,22 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 "Insert or delete brackets, parens, quotes in pair.
 Plug 'jiangmiao/auto-pairs'
-<<<<<<< HEAD
-" Python autocompletion, go to definition.
-Plug 'davidhalter/jedi-vim'
-=======
->>>>>>> Added vim-surround plugin
 " Better autocompletion
 Plug 'Shougo/neocomplcache.vim'
 " Better file browser
 Plug 'scrooloose/nerdtree'
 "Allows you to use <Tab> for all your insert completion needs (:help ins-completion).
 Plug 'ervandew/supertab'
-<<<<<<< HEAD
 " Python and other languages code checker
 Plug 'scrooloose/syntastic'
 "Lines things up
 Plug 'godlygeek/tabular'
-=======
 "Easy surrounding of text
 Plug 'tpope/vim-surround' 
 " Python and other languages code checker
 Plug 'vim-syntastic/syntastic'
 "Lines things up
 Plug 'godlygeek/tabular'
-"Auto Completion
-"Plug 'Valloric/YouCompleteMe'
->>>>>>> Added vim-surround plugin
 
 call plug#end()
 
@@ -67,11 +57,3 @@ call plug#end()
 
 "Enables neocomplcache
 let g:neocomplcache_enable_at_startup = 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> Added vim-surround plugin
-=======
- 
->>>>>>> Added vim-surround plugin
