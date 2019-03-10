@@ -68,6 +68,10 @@ call plug#end()
 "Enables neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> Added vim-surround plugin
+=======
+ 
 >>>>>>> Added vim-surround plugin
