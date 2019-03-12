@@ -32,10 +32,10 @@ call plug#begin('~/.vim/plugged')
 
 "Airline Theme
 Plug 'vim-airline/vim-airline'
-"Insert or delete brackets, parens, quotes in pair.
-"Plug 'jiangmiao/auto-pairs'
 "C/C++ Autocompletion
 Plug 'Rip-Rip/clang_complete'
+"Python Autocompletion
+Plug 'davidhalter/jedi-vim', { 'for':  'python' }
 " Better autocompletion
 Plug 'Shougo/neocomplcache.vim'
 " Better file browser
