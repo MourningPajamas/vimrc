@@ -44,8 +44,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'ervandew/supertab'
 " Python and other languages code checker
 Plug 'scrooloose/syntastic'
-"Lines things up
-Plug 'godlygeek/tabular'
 "Easy surrounding of text
 Plug 'tpope/vim-surround' 
 " Python and other languages code checker
