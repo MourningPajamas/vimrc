@@ -33,7 +33,9 @@ call plug#begin('~/.vim/plugged')
 "Airline Theme
 Plug 'vim-airline/vim-airline'
 "Insert or delete brackets, parens, quotes in pair.
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
+"C/C++ Autocompletion
+Plug 'Rip-Rip/clang_complete'
 " Better autocompletion
 Plug 'Shougo/neocomplcache.vim'
 " Better file browser
@@ -55,5 +57,7 @@ call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""
 
+"Enables C/C++
+let g:clang_library_path='/usr/lib/llvm-6.0/lib/libclang-6.0.so.1'
 "Enables neocomplcache
 let g:neocomplcache_enable_at_startup = 1
