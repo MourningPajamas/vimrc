@@ -59,3 +59,11 @@ call plug#end()
 let g:clang_library_path='/usr/lib/llvm-6.0/lib/libclang-6.0.so.1'
 "Enables neocomplcache
 let g:neocomplcache_enable_at_startup = 1
+"Syntastic recommended settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_wq = 0
