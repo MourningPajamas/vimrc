@@ -36,17 +36,19 @@ Plug 'vim-airline/vim-airline'
 Plug 'Rip-Rip/clang_complete'
 "Python Autocompletion
 Plug 'davidhalter/jedi-vim', { 'for':  'python' }
-" Better autocompletion
+"Better autocompletion
 Plug 'Shougo/neocomplcache.vim'
-" Better file browser
+"Better file browser
 Plug 'scrooloose/nerdtree'
+"Text outlining and task management for Vim based on Emacs’ Org-Mode
+Plug 'jceb/vim-orgmode'
 "Allows you to use <Tab> for all your insert completion needs (:help ins-completion).
 Plug 'ervandew/supertab'
-" Python and other languages code checker
+"Python and other languages code checker
 Plug 'scrooloose/syntastic'
 "Easy surrounding of text
 Plug 'tpope/vim-surround' 
-" Python and other languages code checker
+"Python and other languages code checker
 Plug 'vim-syntastic/syntastic'
 "Lines things up
 Plug 'godlygeek/tabular'
