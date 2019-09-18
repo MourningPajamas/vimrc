@@ -1,3 +1,52 @@
+" -------------------------------------------- "
+" Plugins                                      "
+" -------------------------------------------- "
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+"Airline Theme
+Plugin 'vim-airline/vim-airline'
+"Better file browser
+Plugin 'scrooloose/nerdtree'
+"Text outlining and task management for Vim based on Emacs’ Org-Mode
+Plugin 'jceb/vim-orgmode'
+"Easy surrounding of text
+Plugin 'tpope/vim-surround' 
+"Python and other languages code checker
+Plugin 'vim-syntastic/syntastic'
+"Code Completion
+Plugin 'ycm-core/YouCompleteMe'
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" -------------------------------------------- "
+" Colorscheme and preferences                  "
+" -------------------------------------------- "
+
 syntax on
 colorscheme gruvbox
 set bg=dark
@@ -11,9 +60,9 @@ set shiftwidth=4
 set expandtab
 imap jk <Esc>
 
-"""""""""""""""""""""""""""""""""""""""""""""""
-
-"Compiling and running shortcuts
+" -------------------------------------------- "
+" Compiling and running shortcuts              "
+" -------------------------------------------- "
 
 "For C
 map <C-F5> :w <CR> :!clear && gcc % <CR>
@@ -25,47 +74,3 @@ map <F9> :w <CR> :!clear && python % <CR>
 "For C++
 map <C-F8> :w <CR> :!clear && g++ % <CR>
 map <F8> :w <CR> :!clear && g++ % -o %< && ./%< <CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""""
-
-call plug#begin('~/.vim/plugged')
-
-"Airline Theme
-Plug 'vim-airline/vim-airline'
-"C/C++ Autocompletion
-Plug 'Rip-Rip/clang_complete'
-"Python Autocompletion
-Plug 'davidhalter/jedi-vim', { 'for':  'python' }
-"Better autocompletion
-Plug 'Shougo/neocomplcache.vim'
-"Better file browser
-Plug 'scrooloose/nerdtree'
-"Text outlining and task management for Vim based on Emacs’ Org-Mode
-Plug 'jceb/vim-orgmode'
-"Allows you to use <Tab> for all your insert completion needs (:help ins-completion).
-Plug 'ervandew/supertab'
-"Python and other languages code checker
-Plug 'scrooloose/syntastic'
-"Easy surrounding of text
-Plug 'tpope/vim-surround' 
-"Python and other languages code checker
-Plug 'vim-syntastic/syntastic'
-"Lines things up
-Plug 'godlygeek/tabular'
-
-call plug#end()
-
-"""""""""""""""""""""""""""""""""""""""""""""""
-
-"Enables C/C++
-let g:clang_library_path='/usr/lib/llvm-6.0/lib/libclang-6.0.so.1'
-"Enables neocomplcache
-let g:neocomplcache_enable_at_startup = 1
-"Syntastic recommended settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_wq = 0
