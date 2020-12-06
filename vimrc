@@ -64,13 +64,8 @@ imap jk <Esc>
 " Compiling and running shortcuts              "
 " -------------------------------------------- "
 
-"For C
-map <C-F5> :w <CR> :!clear && gcc % <CR>
-map <F5> :w <CR> :!clear && gcc % -o %< && ./%< <CR>
+"For C/C++ (Must have makefile to work)
+map <F8> :w <CR> :!clear && make <CR>
 
 "For Python
 map <F9> :w <CR> :!clear && python % <CR>
-
-"For C++
-map <C-F8> :w <CR> :!clear && g++ % <CR>
-map <F8> :w <CR> :!clear && g++ % -o %< && ./%< <CR>
